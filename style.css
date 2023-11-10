@@ -19,15 +19,20 @@ body {
     --rosa:  #F127F5;
     --marrom: #c49958;
     --marrom_destaque: rgb(223, 142, 21);
-    --fundo-prata: rgba(245, 245, 245, 0.913);
+    --prata: rgba(245, 245, 245, 0.788);
 }
-
 
 /* Isso será alterado usando Javascript, criando efeito de moestrar a nav quando user rolar a página. */
 
 nav {
     padding: 15px;
     font-size: 1.2rem;
+    color: var(--prata);
+}
+
+nav a.active {
+    color: white; /* destacando a página ativa do user */
+    font-weight: 600;
 }
 
 nav a:hover {
@@ -65,6 +70,9 @@ nav a:hover {
     font-style: oblique;
 }
 
+.text-upper {
+    text-transform: uppercase;
+}
 
 /*flexbox */
 .container {
@@ -97,6 +105,7 @@ nav a:hover {
 
 .justify-end {
     justify-content: flex-end;
+    gap: 20px;
 }
 
 .flex-end {
@@ -187,12 +196,10 @@ button {
     margin-top: 20px;
 }
 
-#hap {
-    margin-top: 4rem;
-
-
-
-    gap: 15px;
-
+footer {
+    padding: 50px 5px 80px 10px;
 }
 
+footer > div {
+    padding: 40px 40px 15px;
+}
