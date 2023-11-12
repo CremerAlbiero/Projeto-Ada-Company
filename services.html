@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/11ff3dc9ae.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&callback=inicializarMapa" async defer></script>
 
+    <script></script>
 
     <link rel="stylesheet" href="style.css">
     <style>
@@ -37,16 +39,16 @@
 <style>
 
 </style>
-<body>
+<body>    
     <header class="blue-section">
         <nav class="d-grid grid-columns-2 align-center">
             <figure class="d-box">
                 <a href="HOMEPAGE" target="_blank" rel="noopener noreferrer">
-                    <img class="logo-header" src="./img/Ada_logo.png" alt="LOGO ADA">
+                    <img class="logo" src="./img/Ada_logo.png" alt="LOGO ADA">
                 </a>
             </figure>
-            
-            <div class="d-flex justify-end gap-20">
+
+            <div class="d-flex justify-end gap-20" id="header-nav">
                 <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
                 <a class="active" href="http://" target="_blank" rel="noopener noreferrer">Serviços</a>
                 <a href="http://" target="_blank" rel="noopener noreferrer">Quem Somos</a>
@@ -72,7 +74,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
                 </figure>
                 <h2>Adaptação de Sites para Acessibilidade</h2>
-                <p>Nossos serviços são.... yqegdyegdygweydwegydweydgwey</p>
+                <p>Nossos serviços são.... </p>
             </div>
     
             <div>
@@ -80,7 +82,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="5rem" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm161.5-86.1c-12.2-5.2-26.3 .4-31.5 12.6s.4 26.3 12.6 31.5l11.9 5.1c17.3 7.4 35.2 12.9 53.6 16.3v50.1c0 4.3-.7 8.6-2.1 12.6l-28.7 86.1c-4.2 12.6 2.6 26.2 15.2 30.4s26.2-2.6 30.4-15.2l24.4-73.2c1.3-3.8 4.8-6.4 8.8-6.4s7.6 2.6 8.8 6.4l24.4 73.2c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-28.7-86.1c-1.4-4.1-2.1-8.3-2.1-12.6V235.5c18.4-3.5 36.3-8.9 53.6-16.3l11.9-5.1c12.2-5.2 17.8-19.3 12.6-31.5s-19.3-17.8-31.5-12.6L338.7 175c-26.1 11.2-54.2 17-82.7 17s-56.5-5.8-82.7-17l-11.9-5.1zM256 160a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
                 </figure>
                 <h2>Criação de Sites Acessíveis</h2>
-                <p>Nossos serviços são.... weduhweuidg2ud23guhqjdhqwud2dnwjdh</p>
+                <p>Nossos serviços são.... </p>
             </div>
     
             <div>
@@ -105,22 +107,31 @@
         </div>
     </section>
 
-    <footer>
-        <div class="d-flex justify-between flex-row">
+    <footer class="d-grid">
+        <div>
             <a href="....homePage">
-                <img height="100px" width="100px" src="./img/Ada_logo.png" alt="Logo Ada Company">
+                <img class="logo" src="./img/Ada_logo.png" alt="Logo Ada Company">
             </a>
-           
-            <div class="flex-column">
-                <nav class="d-flex justify-end flex-row">
-                    <a href="..." target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="..." target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="..." target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                </nav>
-            <br>
-                <div><span>© Ada Company</span></div>
-                <a href="..." class="yellow-text" target="_blank">Políticas de Privacidade</a>
+            <div class="contact-info">
+                <i class="fa-brands fa-whatsapp mt-5"></i><span> (15) 3238-5266</span> <br>
+                <i class="fa-solid fa-envelope mt-5"></i><span>  contato@adacompany.com.br</span><br>
+                <i class="fa-solid fa-location-dot mt-5"></i><span>  Av. Juscelino Kubitschek de Oliveira, 279 - Votorantim/SP</span>
             </div>
+        
+            <nav class="d-flex justify-start gap-20">
+                    <a href="https://www.youtube.com/@FatecVotorantim" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/fatec.votorantim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://br.linkedin.com/in/fatec-votorantim-dsm" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </nav>
+        </div>
+
+        <div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.0559646948127!2d-47.4490959927608!3d-23.53142746993303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58b72bdd65027%3A0xb94c5e9f90d48401!2sFatec%20Votorantim!5e1!3m2!1spt-BR!2sbr!4v1699741800003!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="d-flex flex-end justify-end flex-column">
+            <span>© Ada Company</span>
+            <a href="..." target="_blank">Políticas de Privacidade</a>
         </div>
     </footer>
 </body>
