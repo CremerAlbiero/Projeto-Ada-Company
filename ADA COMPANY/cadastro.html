@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11ff3dc9ae.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&callback=inicializarMapa" async defer></script>
+
+    <script></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #services-carrousel {
+            margin-top: 4rem;
+        }
+
+        #services-carrousel > div {
+            max-width: 350px;
+            height: 200px;
+        }
+
+        svg {
+           fill: var(--azul_escuro2);
+        }
+
+        button {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>    
+    <header class="blue-section">
+        <nav class="navbar" id="navbar">
+            <ul class="nav-log">
+                <li class="nav-item login" id="login"><a href="login.html">Login</a></li>
+                <li class="nav-item login" id="cadastro"><a href="cadastro.html">Cadastro</a></li> 
+                </ul>
+                <ul class="nav-list">
+                <li class="nav-item" id="home"><a href="home.html">Home</a></li>
+                <li class="nav-item" id="serviços"><a href="services.html">Serviços</a></li>
+                <li class="logo"><a href="home.html"><img src="img/ADA 2.png" alt="Logo da Sua Empresa" id="logo"></a></li>
+                <li class="nav-item" id="quemsomos"><a href="quemsomos.html">Quem Somos</a></li>
+                <li class="nav-item" id="contatos"><a href="contatos.html">Contato</a></li>
+              </ul>
+            </nav>
+    </header>
+
+
+     <!--Estudar adicionar apaneas quando abaixar site, do contrário manter imagem-->
+    <main>
+        <div class="container">
+            <h1 class="text-center">Cadastro</h1>
+            <form action="/cadastro" method="POST">
+              <div class="mb-3">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="col-6">
+                        <label for="sobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+                    </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
+              </div>
+              <div class="mb-3">
+                <label for="confirmarSenha" class="form-label">Confirme sua senha</label>
+                <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" placeholder="Digite novamente sua senha">
+              </div>
+              <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <a href="login.html" class="btn btn-link">Já tenho cadastro</a>
+              </div>
+            </form>
+          </div>
+    </main>
+
+    <footer class="d-grid">
+        <div>
+            <a href="....homePage">
+                <img class="logo2" src="./img/Ada_logo.png" alt="Logo Ada Company">
+            </a>
+            <div class="contact-info">
+                <i class="mt-5"></i><span> (15) 3238-5266</span> <br>
+                <i class="mt-5"></i><span>  contato@adacompany.com.br</span><br>
+                <i class="mt-5"></i><span>  Av. Juscelino Kubitschek de Oliveira, 279 - Votorantim/SP</span>
+            </div>
+        
+            <nav class="d-flex justify-start gap-20">
+                    <a href="https://www.youtube.com/@FatecVotorantim" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/fatec.votorantim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://br.linkedin.com/in/fatec-votorantim-dsm" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </nav>
+        </div>
+
+        <div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.0559646948127!2d-47.4490959927608!3d-23.53142746993303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58b72bdd65027%3A0xb94c5e9f90d48401!2sFatec%20Votorantim!5e1!3m2!1spt-BR!2sbr!4v1699741800003!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="d-flex flex-end justify-end flex-column">
+            <span>© Ada Company</span>
+            <a href="..." target="_blank">Políticas de Privacidade</a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function(){
+          let navbar = document.querySelector('#navbar')
+          navbar.classList.toggle('rolagem', window.scrollY > 0)
+        })
+        </script>
+</body>
+</html>
